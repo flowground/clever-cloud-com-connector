@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "bid": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

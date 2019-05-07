@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "bt_challenge": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

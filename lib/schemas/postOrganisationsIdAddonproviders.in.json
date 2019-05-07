@@ -1,0 +1,83 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "api": {
+                    "properties": {
+                        "config_vars": {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        "password": {
+                            "type": "string"
+                        },
+                        "production": {
+                            "properties": {
+                                "base_url": {
+                                    "type": "string"
+                                },
+                                "sso_url": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "base_url",
+                                "sso_url"
+                            ],
+                            "type": "object"
+                        },
+                        "regions": {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        "sso_salt": {
+                            "type": "string"
+                        },
+                        "test": {
+                            "properties": {
+                                "base_url": {
+                                    "type": "string"
+                                },
+                                "sso_url": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "base_url",
+                                "sso_url"
+                            ],
+                            "type": "object"
+                        }
+                    },
+                    "required": [
+                        "config_vars",
+                        "password",
+                        "sso_salt"
+                    ],
+                    "type": "object"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "api",
+                "id",
+                "name"
+            ],
+            "type": "object"
+        }
+    }
+}

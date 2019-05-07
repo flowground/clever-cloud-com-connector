@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "featureName": {
+            "required": true,
+            "type": "string"
+        },
+        "providerId": {
+            "required": true,
+            "type": "string"
+        },
+        "planId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "type",
+                "value"
+            ],
+            "type": "object"
+        }
+    }
+}

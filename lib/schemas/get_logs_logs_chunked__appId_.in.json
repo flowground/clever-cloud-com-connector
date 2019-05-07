@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string"
+        },
+        "download": {
+            "required": false,
+            "type": "boolean"
+        }
+    }
+}

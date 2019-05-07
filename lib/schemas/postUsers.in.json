@@ -1,0 +1,72 @@
+{
+    "type": "object",
+    "properties": {
+        "invitationKey": {
+            "required": false,
+            "type": "string"
+        },
+        "addonBetaInvitationKey": {
+            "required": false,
+            "type": "string"
+        },
+        "email": {
+            "required": false,
+            "type": "string"
+        },
+        "pass": {
+            "required": false,
+            "type": "string"
+        },
+        "url_next": {
+            "required": false,
+            "type": "string"
+        },
+        "terms": {
+            "required": false,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "email": {
+                    "description": "",
+                    "type": "string"
+                },
+                "lang": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "terms": {
+                    "default": false,
+                    "type": "boolean"
+                },
+                "zipcode": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "email",
+                "password",
+                "terms"
+            ],
+            "type": "object"
+        }
+    }
+}

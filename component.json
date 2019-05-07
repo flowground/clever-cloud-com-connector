@@ -1,0 +1,4443 @@
+{
+    "title": "Clever-Cloud",
+    "description": "Public API for managing Clever-Cloud data and products",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/clever-cloud.com/1.0.0/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://api.clever-cloud.com/v2",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "get_application__appId__environment": {
+            "main": "./lib/actions/get_application__appId__environment.js",
+            "title": "get_application__appId__environment",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_application__appId__environment.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_application__appId__environment": {
+            "main": "./lib/actions/put_application__appId__environment.js",
+            "title": "put_application__appId__environment",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_application__appId__environment.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postAuthorize": {
+            "main": "./lib/actions/postAuthorize.js",
+            "title": "Handled by our API.",
+            "description": "Handled by our API.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postAuthorize.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_events_event_socket": {
+            "main": "./lib/actions/get_events_event_socket.js",
+            "title": "Retrieve events as they come through a websocket connection. To have authorization, you have to send a `{ \"message_type\": \"oauth\", \"authorization\": \"oauth authorization string\" }` message",
+            "description": "Retrieve events as they come through a websocket connection. To have authorization, you have to send a `{ \"message_type\": \"oauth\", \"authorization\": \"oauth authorization string\" }` message",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_events_event_socket.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getGithub": {
+            "main": "./lib/actions/getGithub.js",
+            "title": "getGithub",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getGithub.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getGithubApplications": {
+            "main": "./lib/actions/getGithubApplications.js",
+            "title": "getGithubApplications",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getGithubApplications.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getGithubCallback": {
+            "main": "./lib/actions/getGithubCallback.js",
+            "title": "getGithubCallback",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getGithubCallback.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getGithubEmails": {
+            "main": "./lib/actions/getGithubEmails.js",
+            "title": "getGithubEmails",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getGithubEmails.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getGithubKeys": {
+            "main": "./lib/actions/getGithubKeys.js",
+            "title": "getGithubKeys",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getGithubKeys.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteGithubLink": {
+            "main": "./lib/actions/deleteGithubLink.js",
+            "title": "deleteGithubLink",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteGithubLink.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getGithubLink": {
+            "main": "./lib/actions/getGithubLink.js",
+            "title": "getGithubLink",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getGithubLink.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getGithubLogin": {
+            "main": "./lib/actions/getGithubLogin.js",
+            "title": "getGithubLogin",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getGithubLogin.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postGithubRedeploy": {
+            "main": "./lib/actions/postGithubRedeploy.js",
+            "title": "postGithubRedeploy",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postGithubRedeploy.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getGithubSignup": {
+            "main": "./lib/actions/getGithubSignup.js",
+            "title": "getGithubSignup",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getGithubSignup.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postGithubSignup": {
+            "main": "./lib/actions/postGithubSignup.js",
+            "title": "postGithubSignup",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postGithubSignup.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getGithubUsername": {
+            "main": "./lib/actions/getGithubUsername.js",
+            "title": "getGithubUsername",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getGithubUsername.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_logs_logs_chunked__appId_": {
+            "main": "./lib/actions/get_logs_logs_chunked__appId_.js",
+            "title": "Retrieve logs as they come through a chunked, never-ending response",
+            "description": "Retrieve logs as they come through a chunked, never-ending response",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_logs_logs_chunked__appId_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_logs_logs_socket__appId_": {
+            "main": "./lib/actions/get_logs_logs_socket__appId_.js",
+            "title": "Retrieve logs as they come through a websocket connection. To have authorization, you have to send a `{ \"message_type\": \"oauth\", \"authorization\": \"oauth authorization string\" }` message",
+            "description": "Retrieve logs as they come through a websocket connection. To have authorization, you have to send a `{ \"message_type\": \"oauth\", \"authorization\": \"oauth authorization string\" }` message",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_logs_logs_socket__appId_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_logs__appId_": {
+            "main": "./lib/actions/get_logs__appId_.js",
+            "title": "Fetch the logs for a given application",
+            "description": "Fetch the logs for a given application",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_logs__appId_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_logs__appId__drains": {
+            "main": "./lib/actions/get_logs__appId__drains.js",
+            "title": "Fetch the logs drains for a given application",
+            "description": "Fetch the logs drains for a given application",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_logs__appId__drains.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_logs__appId__drains": {
+            "main": "./lib/actions/post_logs__appId__drains.js",
+            "title": "Add a log drain for a given application",
+            "description": "Add a log drain for a given application",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_logs__appId__drains.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_logs__appId__drains__idOrUrl": {
+            "main": "./lib/actions/delete_logs__appId__drains__idOrUrl.js",
+            "title": "Delete the logs drain by id or url for a given application",
+            "description": "Delete the logs drain by id or url for a given application",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_logs__appId__drains__idOrUrl.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_logs__appId__drains__idOrUrl": {
+            "main": "./lib/actions/get_logs__appId__drains__idOrUrl.js",
+            "title": "Fetch the logs drain by id or url for a given application",
+            "description": "Fetch the logs drain by id or url for a given application",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_logs__appId__drains__idOrUrl.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getNewsfeedsBlog": {
+            "main": "./lib/actions/getNewsfeedsBlog.js",
+            "title": "getNewsfeedsBlog",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getNewsfeedsBlog.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getNewsfeedEngineering": {
+            "main": "./lib/actions/getNewsfeedEngineering.js",
+            "title": "getNewsfeedEngineering",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getNewsfeedEngineering.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_notifications_emailhooks__ownerId_": {
+            "main": "./lib/actions/get_notifications_emailhooks__ownerId_.js",
+            "title": "list created e-mail hooks",
+            "description": "list created e-mail hooks",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_notifications_emailhooks__ownerId_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_notifications_emailhooks__ownerId_": {
+            "main": "./lib/actions/post_notifications_emailhooks__ownerId_.js",
+            "title": "create a hook for e-mail notifications",
+            "description": "create a hook for e-mail notifications",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_notifications_emailhooks__ownerId_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_notifications_emailhooks__ownerId___id": {
+            "main": "./lib/actions/delete_notifications_emailhooks__ownerId___id.js",
+            "title": "delete an e-mail hook",
+            "description": "delete an e-mail hook",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_notifications_emailhooks__ownerId___id.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_notifications_emailhooks__ownerId___id": {
+            "main": "./lib/actions/put_notifications_emailhooks__ownerId___id.js",
+            "title": "edit an e-mail hook",
+            "description": "edit an e-mail hook",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_notifications_emailhooks__ownerId___id.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_notifications_info_events": {
+            "main": "./lib/actions/get_notifications_info_events.js",
+            "title": "list available events",
+            "description": "list available events",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_notifications_info_events.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_notifications_info_webhookformats": {
+            "main": "./lib/actions/get_notifications_info_webhookformats.js",
+            "title": "list available webhook formats",
+            "description": "list available webhook formats",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_notifications_info_webhookformats.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_notifications_webhooks__ownerId_": {
+            "main": "./lib/actions/get_notifications_webhooks__ownerId_.js",
+            "title": "list created hooks",
+            "description": "list created hooks",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_notifications_webhooks__ownerId_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_notifications_webhooks__ownerId_": {
+            "main": "./lib/actions/post_notifications_webhooks__ownerId_.js",
+            "title": "create a hook for notifications",
+            "description": "create a hook for notifications",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_notifications_webhooks__ownerId_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_notifications_webhooks__ownerId___id": {
+            "main": "./lib/actions/delete_notifications_webhooks__ownerId___id.js",
+            "title": "delete a hook",
+            "description": "delete a hook",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_notifications_webhooks__ownerId___id.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_notifications_webhooks__ownerId___id": {
+            "main": "./lib/actions/put_notifications_webhooks__ownerId___id.js",
+            "title": "edit a hook",
+            "description": "edit a hook",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_notifications_webhooks__ownerId___id.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOauthAccessToken": {
+            "main": "./lib/actions/postOauthAccessToken.js",
+            "title": "postOauthAccessToken",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOauthAccessToken.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_oauth_access_token_query": {
+            "main": "./lib/actions/post_oauth_access_token_query.js",
+            "title": "post_oauth_access_token_query",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_oauth_access_token_query.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOauthAuthorize": {
+            "main": "./lib/actions/getOauthAuthorize.js",
+            "title": "getOauthAuthorize",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOauthAuthorize.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOauthAuthorize": {
+            "main": "./lib/actions/postOauthAuthorize.js",
+            "title": "postOauthAuthorize",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOauthAuthorize.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOauthRequestToken": {
+            "main": "./lib/actions/postOauthRequestToken.js",
+            "title": "postOauthRequestToken",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOauthRequestToken.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_oauth_request_token_query": {
+            "main": "./lib/actions/post_oauth_request_token_query.js",
+            "title": "post_oauth_request_token_query",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_oauth_request_token_query.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOauthRights": {
+            "main": "./lib/actions/getOauthRights.js",
+            "title": "getOauthRights",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOauthRights.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisations": {
+            "main": "./lib/actions/getOrganisations.js",
+            "title": "getOrganisations",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOrganisations": {
+            "main": "./lib/actions/postOrganisations.js",
+            "title": "postOrganisations",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOrganisations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsId": {
+            "main": "./lib/actions/deleteOrganisationsId.js",
+            "title": "deleteOrganisationsId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsId": {
+            "main": "./lib/actions/getOrganisationsId.js",
+            "title": "getOrganisationsId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsId": {
+            "main": "./lib/actions/putOrganisationsId.js",
+            "title": "putOrganisationsId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdAddonproviders": {
+            "main": "./lib/actions/getOrganisationsIdAddonproviders.js",
+            "title": "getOrganisationsIdAddonproviders",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdAddonproviders.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOrganisationsIdAddonproviders": {
+            "main": "./lib/actions/postOrganisationsIdAddonproviders.js",
+            "title": "postOrganisationsIdAddonproviders",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOrganisationsIdAddonproviders.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdAddonprovidersProviderId": {
+            "main": "./lib/actions/getOrganisationsIdAddonprovidersProviderId.js",
+            "title": "getOrganisationsIdAddonprovidersProviderId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdAddonprovidersProviderId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdAddonprovidersProviderId": {
+            "main": "./lib/actions/putOrganisationsIdAddonprovidersProviderId.js",
+            "title": "putOrganisationsIdAddonprovidersProviderId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdAddonprovidersProviderId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdAddonprovidersProviderIdFeatures": {
+            "main": "./lib/actions/getOrganisationsIdAddonprovidersProviderIdFeatures.js",
+            "title": "getOrganisationsIdAddonprovidersProviderIdFeatures",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdAddonprovidersProviderIdFeatures.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOrganisationsIdAddonprovidersProviderIdFeatures": {
+            "main": "./lib/actions/postOrganisationsIdAddonprovidersProviderIdFeatures.js",
+            "title": "postOrganisationsIdAddonprovidersProviderIdFeatures",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOrganisationsIdAddonprovidersProviderIdFeatures.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdAddonprovidersProviderIdFeaturesFeatureId": {
+            "main": "./lib/actions/deleteOrganisationsIdAddonprovidersProviderIdFeaturesFeatureId.js",
+            "title": "deleteOrganisationsIdAddonprovidersProviderIdFeaturesFeatureId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdAddonprovidersProviderIdFeaturesFeatureId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdAddonprovidersProviderIdPlans": {
+            "main": "./lib/actions/getOrganisationsIdAddonprovidersProviderIdPlans.js",
+            "title": "getOrganisationsIdAddonprovidersProviderIdPlans",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdAddonprovidersProviderIdPlans.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOrganisationsIdAddonprovidersProviderIdPlans": {
+            "main": "./lib/actions/postOrganisationsIdAddonprovidersProviderIdPlans.js",
+            "title": "postOrganisationsIdAddonprovidersProviderIdPlans",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOrganisationsIdAddonprovidersProviderIdPlans.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdAddonprovidersProviderIdPlansPlanId": {
+            "main": "./lib/actions/deleteOrganisationsIdAddonprovidersProviderIdPlansPlanId.js",
+            "title": "deleteOrganisationsIdAddonprovidersProviderIdPlansPlanId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdAddonprovidersProviderIdPlansPlanId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdAddonprovidersProviderIdPlansPlanId": {
+            "main": "./lib/actions/getOrganisationsIdAddonprovidersProviderIdPlansPlanId.js",
+            "title": "getOrganisationsIdAddonprovidersProviderIdPlansPlanId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdAddonprovidersProviderIdPlansPlanId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdAddonprovidersProviderIdPlansPlanId": {
+            "main": "./lib/actions/putOrganisationsIdAddonprovidersProviderIdPlansPlanId.js",
+            "title": "putOrganisationsIdAddonprovidersProviderIdPlansPlanId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdAddonprovidersProviderIdPlansPlanId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdAddonprovidersProviderIdPlansPlanIdFeaturesFeatureName": {
+            "main": "./lib/actions/deleteOrganisationsIdAddonprovidersProviderIdPlansPlanIdFeaturesFeatureName.js",
+            "title": "deleteOrganisationsIdAddonprovidersProviderIdPlansPlanIdFeaturesFeatureName",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdAddonprovidersProviderIdPlansPlanIdFeaturesFeatureName.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdAddonprovidersProviderIdPlansPlanIdFeaturesFeatureName": {
+            "main": "./lib/actions/putOrganisationsIdAddonprovidersProviderIdPlansPlanIdFeaturesFeatureName.js",
+            "title": "putOrganisationsIdAddonprovidersProviderIdPlansPlanIdFeaturesFeatureName",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdAddonprovidersProviderIdPlansPlanIdFeaturesFeatureName.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_organisations__id__addonproviders__providerId__sso": {
+            "main": "./lib/actions/get_organisations__id__addonproviders__providerId__sso.js",
+            "title": "get_organisations__id__addonproviders__providerId__sso",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_organisations__id__addonproviders__providerId__sso.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdAddonprovidersProviderIdTags": {
+            "main": "./lib/actions/getOrganisationsIdAddonprovidersProviderIdTags.js",
+            "title": "getOrganisationsIdAddonprovidersProviderIdTags",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdAddonprovidersProviderIdTags.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOrganisationsIdAddonprovidersProviderIdTesters": {
+            "main": "./lib/actions/postOrganisationsIdAddonprovidersProviderIdTesters.js",
+            "title": "postOrganisationsIdAddonprovidersProviderIdTesters",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOrganisationsIdAddonprovidersProviderIdTesters.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdAddons": {
+            "main": "./lib/actions/getOrganisationsIdAddons.js",
+            "title": "getOrganisationsIdAddons",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdAddons.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOrganisationsIdAddons": {
+            "main": "./lib/actions/postOrganisationsIdAddons.js",
+            "title": "postOrganisationsIdAddons",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOrganisationsIdAddons.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_organisations__id__addons_preorders": {
+            "main": "./lib/actions/post_organisations__id__addons_preorders.js",
+            "title": "post_organisations__id__addons_preorders",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_organisations__id__addons_preorders.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdAddonsAddonId": {
+            "main": "./lib/actions/deleteOrganisationsIdAddonsAddonId.js",
+            "title": "deleteOrganisationsIdAddonsAddonId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdAddonsAddonId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdAddonsAddonId": {
+            "main": "./lib/actions/getOrganisationsIdAddonsAddonId.js",
+            "title": "getOrganisationsIdAddonsAddonId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdAddonsAddonId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdAddonsAddonId": {
+            "main": "./lib/actions/putOrganisationsIdAddonsAddonId.js",
+            "title": "putOrganisationsIdAddonsAddonId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdAddonsAddonId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdAddonsAddonIdApplications": {
+            "main": "./lib/actions/getOrganisationsIdAddonsAddonIdApplications.js",
+            "title": "getOrganisationsIdAddonsAddonIdApplications",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdAddonsAddonIdApplications.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdAddonsAddonIdEnv": {
+            "main": "./lib/actions/getOrganisationsIdAddonsAddonIdEnv.js",
+            "title": "getOrganisationsIdAddonsAddonIdEnv",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdAddonsAddonIdEnv.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdAddonsAddonIdPlan": {
+            "main": "./lib/actions/putOrganisationsIdAddonsAddonIdPlan.js",
+            "title": "putOrganisationsIdAddonsAddonIdPlan",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdAddonsAddonIdPlan.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_organisations__id__addons__addonId__sso": {
+            "main": "./lib/actions/get_organisations__id__addons__addonId__sso.js",
+            "title": "get_organisations__id__addons__addonId__sso",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_organisations__id__addons__addonId__sso.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdAddonsAddonIdTags": {
+            "main": "./lib/actions/getOrganisationsIdAddonsAddonIdTags.js",
+            "title": "getOrganisationsIdAddonsAddonIdTags",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdAddonsAddonIdTags.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdAddonsAddonIdTagsTag": {
+            "main": "./lib/actions/deleteOrganisationsIdAddonsAddonIdTagsTag.js",
+            "title": "deleteOrganisationsIdAddonsAddonIdTagsTag",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdAddonsAddonIdTagsTag.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdAddonsAddonIdTagsTag": {
+            "main": "./lib/actions/putOrganisationsIdAddonsAddonIdTagsTag.js",
+            "title": "putOrganisationsIdAddonsAddonIdTagsTag",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdAddonsAddonIdTagsTag.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdApplications": {
+            "main": "./lib/actions/getOrganisationsIdApplications.js",
+            "title": "getOrganisationsIdApplications",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdApplications.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOrganisationsIdApplications": {
+            "main": "./lib/actions/postOrganisationsIdApplications.js",
+            "title": "Creates an application. If you want to create a Github app, you need to replace the oauthApp field with what you will find here: https://github.com/CleverCloud/doc.clever-cloud.com/issues/179",
+            "description": "Creates an application. If you want to create a Github app, you need to replace the oauthApp field with what you will find here: https://github.com/CleverCloud/doc.clever-cloud.com/issues/179",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOrganisationsIdApplications.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdApplicationsAppId": {
+            "main": "./lib/actions/deleteOrganisationsIdApplicationsAppId.js",
+            "title": "deleteOrganisationsIdApplicationsAppId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdApplicationsAppId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdApplicationsAppId": {
+            "main": "./lib/actions/getOrganisationsIdApplicationsAppId.js",
+            "title": "getOrganisationsIdApplicationsAppId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdApplicationsAppId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdApplicationsAppId": {
+            "main": "./lib/actions/putOrganisationsIdApplicationsAppId.js",
+            "title": "putOrganisationsIdApplicationsAppId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdApplicationsAppId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdApplicationsAppIdAddons": {
+            "main": "./lib/actions/getOrganisationsIdApplicationsAppIdAddons.js",
+            "title": "getOrganisationsIdApplicationsAppIdAddons",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdApplicationsAppIdAddons.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOrganisationsIdApplicationsAppIdAddons": {
+            "main": "./lib/actions/postOrganisationsIdApplicationsAppIdAddons.js",
+            "title": "postOrganisationsIdApplicationsAppIdAddons",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOrganisationsIdApplicationsAppIdAddons.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdApplicationsAppIdAddonsEnv": {
+            "main": "./lib/actions/getOrganisationsIdApplicationsAppIdAddonsEnv.js",
+            "title": "getOrganisationsIdApplicationsAppIdAddonsEnv",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdApplicationsAppIdAddonsEnv.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdApplicationsAppIdAddonsAddonId": {
+            "main": "./lib/actions/deleteOrganisationsIdApplicationsAppIdAddonsAddonId.js",
+            "title": "deleteOrganisationsIdApplicationsAppIdAddonsAddonId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdApplicationsAppIdAddonsAddonId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_organisations__id__applications__appId__branch": {
+            "main": "./lib/actions/put_organisations__id__applications__appId__branch.js",
+            "title": "put_organisations__id__applications__appId__branch",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_organisations__id__applications__appId__branch.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_organisations__id__applications__appId__branches": {
+            "main": "./lib/actions/get_organisations__id__applications__appId__branches.js",
+            "title": "get_organisations__id__applications__appId__branches",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_organisations__id__applications__appId__branches.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdApplicationsAppIdDependencies": {
+            "main": "./lib/actions/getOrganisationsIdApplicationsAppIdDependencies.js",
+            "title": "getOrganisationsIdApplicationsAppIdDependencies",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdApplicationsAppIdDependencies.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_organisations__id__applications__appId__dependencies_env": {
+            "main": "./lib/actions/get_organisations__id__applications__appId__dependencies_env.js",
+            "title": "get_organisations__id__applications__appId__dependencies_env",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_organisations__id__applications__appId__dependencies_env.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdApplicationsAppIdDependenciesDependencyId": {
+            "main": "./lib/actions/deleteOrganisationsIdApplicationsAppIdDependenciesDependencyId.js",
+            "title": "deleteOrganisationsIdApplicationsAppIdDependenciesDependencyId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdApplicationsAppIdDependenciesDependencyId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdApplicationsAppIdDependenciesDependencyId": {
+            "main": "./lib/actions/putOrganisationsIdApplicationsAppIdDependenciesDependencyId.js",
+            "title": "putOrganisationsIdApplicationsAppIdDependenciesDependencyId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdApplicationsAppIdDependenciesDependencyId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdApplicationsAppIdDependents": {
+            "main": "./lib/actions/getOrganisationsIdApplicationsAppIdDependents.js",
+            "title": "getOrganisationsIdApplicationsAppIdDependents",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdApplicationsAppIdDependents.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdApplicationsAppIdDeployments": {
+            "main": "./lib/actions/getOrganisationsIdApplicationsAppIdDeployments.js",
+            "title": "getOrganisationsIdApplicationsAppIdDeployments",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdApplicationsAppIdDeployments.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdApplicationsAppIdDeploymentsDeploymentIdInstances": {
+            "main": "./lib/actions/deleteOrganisationsIdApplicationsAppIdDeploymentsDeploymentIdInstances.js",
+            "title": "deleteOrganisationsIdApplicationsAppIdDeploymentsDeploymentIdInstances",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdApplicationsAppIdDeploymentsDeploymentIdInstances.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdApplicationsAppIdEnv": {
+            "main": "./lib/actions/getOrganisationsIdApplicationsAppIdEnv.js",
+            "title": "getOrganisationsIdApplicationsAppIdEnv",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdApplicationsAppIdEnv.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdApplicationsAppIdEnv": {
+            "main": "./lib/actions/putOrganisationsIdApplicationsAppIdEnv.js",
+            "title": "putOrganisationsIdApplicationsAppIdEnv",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdApplicationsAppIdEnv.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdApplicationsAppIdEnvEnvName": {
+            "main": "./lib/actions/deleteOrganisationsIdApplicationsAppIdEnvEnvName.js",
+            "title": "deleteOrganisationsIdApplicationsAppIdEnvEnvName",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdApplicationsAppIdEnvEnvName.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdApplicationsAppIdEnvEnvName": {
+            "main": "./lib/actions/putOrganisationsIdApplicationsAppIdEnvEnvName.js",
+            "title": "putOrganisationsIdApplicationsAppIdEnvEnvName",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdApplicationsAppIdEnvEnvName.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_organisations__id__applications__appId__exposed_env": {
+            "main": "./lib/actions/get_organisations__id__applications__appId__exposed_env.js",
+            "title": "get_organisations__id__applications__appId__exposed_env",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_organisations__id__applications__appId__exposed_env.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_organisations__id__applications__appId__exposed_env": {
+            "main": "./lib/actions/put_organisations__id__applications__appId__exposed_env.js",
+            "title": "put_organisations__id__applications__appId__exposed_env",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_organisations__id__applications__appId__exposed_env.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdApplicationsAppIdInstances": {
+            "main": "./lib/actions/deleteOrganisationsIdApplicationsAppIdInstances.js",
+            "title": "deleteOrganisationsIdApplicationsAppIdInstances",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdApplicationsAppIdInstances.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdApplicationsAppIdInstances": {
+            "main": "./lib/actions/getOrganisationsIdApplicationsAppIdInstances.js",
+            "title": "getOrganisationsIdApplicationsAppIdInstances",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdApplicationsAppIdInstances.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOrganisationsIdApplicationsAppIdInstances": {
+            "main": "./lib/actions/postOrganisationsIdApplicationsAppIdInstances.js",
+            "title": "postOrganisationsIdApplicationsAppIdInstances",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOrganisationsIdApplicationsAppIdInstances.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_organisations__id__applications__appId__instances__instanceId_": {
+            "main": "./lib/actions/get_organisations__id__applications__appId__instances__instanceId_.js",
+            "title": "get_organisations__id__applications__appId__instances__instanceId_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_organisations__id__applications__appId__instances__instanceId_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdApplicationsAppIdTags": {
+            "main": "./lib/actions/getOrganisationsIdApplicationsAppIdTags.js",
+            "title": "getOrganisationsIdApplicationsAppIdTags",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdApplicationsAppIdTags.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdApplicationsAppIdTagsTag": {
+            "main": "./lib/actions/deleteOrganisationsIdApplicationsAppIdTagsTag.js",
+            "title": "deleteOrganisationsIdApplicationsAppIdTagsTag",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdApplicationsAppIdTagsTag.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdApplicationsAppIdTagsTag": {
+            "main": "./lib/actions/putOrganisationsIdApplicationsAppIdTagsTag.js",
+            "title": "putOrganisationsIdApplicationsAppIdTagsTag",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdApplicationsAppIdTagsTag.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdApplicationsAppIdVhosts": {
+            "main": "./lib/actions/getOrganisationsIdApplicationsAppIdVhosts.js",
+            "title": "getOrganisationsIdApplicationsAppIdVhosts",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdApplicationsAppIdVhosts.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdApplicationsAppIdVhostsFavourite": {
+            "main": "./lib/actions/deleteOrganisationsIdApplicationsAppIdVhostsFavourite.js",
+            "title": "deleteOrganisationsIdApplicationsAppIdVhostsFavourite",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdApplicationsAppIdVhostsFavourite.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdApplicationsAppIdVhostsFavourite": {
+            "main": "./lib/actions/getOrganisationsIdApplicationsAppIdVhostsFavourite.js",
+            "title": "getOrganisationsIdApplicationsAppIdVhostsFavourite",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdApplicationsAppIdVhostsFavourite.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdApplicationsAppIdVhostsFavourite": {
+            "main": "./lib/actions/putOrganisationsIdApplicationsAppIdVhostsFavourite.js",
+            "title": "putOrganisationsIdApplicationsAppIdVhostsFavourite",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdApplicationsAppIdVhostsFavourite.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdApplicationsAppIdVhostsDomain": {
+            "main": "./lib/actions/deleteOrganisationsIdApplicationsAppIdVhostsDomain.js",
+            "title": "deleteOrganisationsIdApplicationsAppIdVhostsDomain",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdApplicationsAppIdVhostsDomain.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdApplicationsAppIdVhostsDomain": {
+            "main": "./lib/actions/putOrganisationsIdApplicationsAppIdVhostsDomain.js",
+            "title": "putOrganisationsIdApplicationsAppIdVhostsDomain",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdApplicationsAppIdVhostsDomain.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdAvatar": {
+            "main": "./lib/actions/putOrganisationsIdAvatar.js",
+            "title": "If you want to upload an image from your computer, send the image in the body of the request without anything else.",
+            "description": "If you want to upload an image from your computer, send the image in the body of the request without anything else.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdAvatar.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdConsumers": {
+            "main": "./lib/actions/getOrganisationsIdConsumers.js",
+            "title": "getOrganisationsIdConsumers",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdConsumers.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOrganisationsIdConsumers": {
+            "main": "./lib/actions/postOrganisationsIdConsumers.js",
+            "title": "postOrganisationsIdConsumers",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOrganisationsIdConsumers.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdConsumersKey": {
+            "main": "./lib/actions/deleteOrganisationsIdConsumersKey.js",
+            "title": "deleteOrganisationsIdConsumersKey",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdConsumersKey.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdConsumersKey": {
+            "main": "./lib/actions/getOrganisationsIdConsumersKey.js",
+            "title": "getOrganisationsIdConsumersKey",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdConsumersKey.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdConsumersKey": {
+            "main": "./lib/actions/putOrganisationsIdConsumersKey.js",
+            "title": "putOrganisationsIdConsumersKey",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdConsumersKey.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdConsumersKeySecret": {
+            "main": "./lib/actions/getOrganisationsIdConsumersKeySecret.js",
+            "title": "getOrganisationsIdConsumersKeySecret",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdConsumersKeySecret.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdConsumptions": {
+            "main": "./lib/actions/getOrganisationsIdConsumptions.js",
+            "title": "getOrganisationsIdConsumptions",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdConsumptions.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdCredits": {
+            "main": "./lib/actions/getOrganisationsIdCredits.js",
+            "title": "getOrganisationsIdCredits",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdCredits.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdInstances": {
+            "main": "./lib/actions/getOrganisationsIdInstances.js",
+            "title": "getOrganisationsIdInstances",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdInstances.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdMembers": {
+            "main": "./lib/actions/getOrganisationsIdMembers.js",
+            "title": "getOrganisationsIdMembers",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdMembers.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOrganisationsIdMembers": {
+            "main": "./lib/actions/postOrganisationsIdMembers.js",
+            "title": "postOrganisationsIdMembers",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOrganisationsIdMembers.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdMembersUserId": {
+            "main": "./lib/actions/deleteOrganisationsIdMembersUserId.js",
+            "title": "deleteOrganisationsIdMembersUserId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdMembersUserId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdMembersUserId": {
+            "main": "./lib/actions/putOrganisationsIdMembersUserId.js",
+            "title": "putOrganisationsIdMembersUserId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdMembersUserId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdPaymentInfo": {
+            "main": "./lib/actions/getOrganisationsIdPaymentInfo.js",
+            "title": "getOrganisationsIdPaymentInfo",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdPaymentInfo.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdPaymentsBillings": {
+            "main": "./lib/actions/getOrganisationsIdPaymentsBillings.js",
+            "title": "getOrganisationsIdPaymentsBillings",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdPaymentsBillings.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postOrganisationsIdPaymentsBillings": {
+            "main": "./lib/actions/postOrganisationsIdPaymentsBillings.js",
+            "title": "postOrganisationsIdPaymentsBillings",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postOrganisationsIdPaymentsBillings.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_organisations__id__payments_billings_unpaid": {
+            "main": "./lib/actions/get_organisations__id__payments_billings_unpaid.js",
+            "title": "get_organisations__id__payments_billings_unpaid",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_organisations__id__payments_billings_unpaid.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdPaymentsBillingsBid": {
+            "main": "./lib/actions/deleteOrganisationsIdPaymentsBillingsBid.js",
+            "title": "deleteOrganisationsIdPaymentsBillingsBid",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdPaymentsBillingsBid.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdPaymentsBillingsBid": {
+            "main": "./lib/actions/getOrganisationsIdPaymentsBillingsBid.js",
+            "title": "getOrganisationsIdPaymentsBillingsBid",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdPaymentsBillingsBid.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putOrganisationsIdPaymentsBillingsBid": {
+            "main": "./lib/actions/putOrganisationsIdPaymentsBillingsBid.js",
+            "title": "putOrganisationsIdPaymentsBillingsBid",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putOrganisationsIdPaymentsBillingsBid.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdPaymentsBillingsBidPdf": {
+            "main": "./lib/actions/getOrganisationsIdPaymentsBillingsBidPdf.js",
+            "title": "getOrganisationsIdPaymentsBillingsBidPdf",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdPaymentsBillingsBidPdf.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisationsIdPaymentsFullPricePrice": {
+            "main": "./lib/actions/getOrganisationsIdPaymentsFullPricePrice.js",
+            "title": "getOrganisationsIdPaymentsFullPricePrice",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisationsIdPaymentsFullPricePrice.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_organisations__id__payments_methods": {
+            "main": "./lib/actions/get_organisations__id__payments_methods.js",
+            "title": "get_organisations__id__payments_methods",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_organisations__id__payments_methods.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_organisations__id__payments_methods": {
+            "main": "./lib/actions/post_organisations__id__payments_methods.js",
+            "title": "post_organisations__id__payments_methods",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_organisations__id__payments_methods.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_organisations__id__payments_methods_default": {
+            "main": "./lib/actions/get_organisations__id__payments_methods_default.js",
+            "title": "get_organisations__id__payments_methods_default",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_organisations__id__payments_methods_default.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_organisations__id__payments_methods_default": {
+            "main": "./lib/actions/put_organisations__id__payments_methods_default.js",
+            "title": "put_organisations__id__payments_methods_default",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_organisations__id__payments_methods_default.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_organisations__id__payments_methods__mId_": {
+            "main": "./lib/actions/delete_organisations__id__payments_methods__mId_.js",
+            "title": "delete_organisations__id__payments_methods__mId_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_organisations__id__payments_methods__mId_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_organisations__id__payments_monthlyinvoice": {
+            "main": "./lib/actions/get_organisations__id__payments_monthlyinvoice.js",
+            "title": "get_organisations__id__payments_monthlyinvoice",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_organisations__id__payments_monthlyinvoice.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_organisations__id__payments_monthlyinvoice_maxcredit": {
+            "main": "./lib/actions/put_organisations__id__payments_monthlyinvoice_maxcredit.js",
+            "title": "put_organisations__id__payments_monthlyinvoice_maxcredit",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_organisations__id__payments_monthlyinvoice_maxcredit.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteOrganisationsIdPaymentsRecurring": {
+            "main": "./lib/actions/deleteOrganisationsIdPaymentsRecurring.js",
+            "title": "deleteOrganisationsIdPaymentsRecurring",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteOrganisationsIdPaymentsRecurring.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_organisations__id__payments_recurring": {
+            "main": "./lib/actions/get_organisations__id__payments_recurring.js",
+            "title": "get_organisations__id__payments_recurring",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_organisations__id__payments_recurring.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_organisations__id__payments_tokens_bt": {
+            "main": "./lib/actions/get_organisations__id__payments_tokens_bt.js",
+            "title": "get_organisations__id__payments_tokens_bt",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_organisations__id__payments_tokens_bt.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getPasswordForgotten": {
+            "main": "./lib/actions/getPasswordForgotten.js",
+            "title": "getPasswordForgotten",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getPasswordForgotten.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postPasswordForgotten": {
+            "main": "./lib/actions/postPasswordForgotten.js",
+            "title": "postPasswordForgotten",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postPasswordForgotten.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getPasswordForgottenKey": {
+            "main": "./lib/actions/getPasswordForgottenKey.js",
+            "title": "getPasswordForgottenKey",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getPasswordForgottenKey.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postPasswordForgottenKey": {
+            "main": "./lib/actions/postPasswordForgottenKey.js",
+            "title": "postPasswordForgottenKey",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postPasswordForgottenKey.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getPaymentsCouponsName": {
+            "main": "./lib/actions/getPaymentsCouponsName.js",
+            "title": "getPaymentsCouponsName",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getPaymentsCouponsName.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getPaymentsProviders": {
+            "main": "./lib/actions/getPaymentsProviders.js",
+            "title": "getPaymentsProviders",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getPaymentsProviders.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getPaymentsTokensBt": {
+            "main": "./lib/actions/getPaymentsTokensBt.js",
+            "title": "getPaymentsTokensBt",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getPaymentsTokensBt.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getPaymentsWebhooksBt": {
+            "main": "./lib/actions/getPaymentsWebhooksBt.js",
+            "title": "getPaymentsWebhooksBt",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getPaymentsWebhooksBt.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postPaymentsBidEndBt": {
+            "main": "./lib/actions/postPaymentsBidEndBt.js",
+            "title": "postPaymentsBidEndBt",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postPaymentsBidEndBt.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getProductsAddonProviders": {
+            "main": "./lib/actions/getProductsAddonProviders.js",
+            "title": "getProductsAddonProviders",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getProductsAddonProviders.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getProductsAddonProvidersProviderId": {
+            "main": "./lib/actions/getProductsAddonProvidersProviderId.js",
+            "title": "getProductsAddonProvidersProviderId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getProductsAddonProvidersProviderId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getProductsCountries": {
+            "main": "./lib/actions/getProductsCountries.js",
+            "title": "getProductsCountries",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getProductsCountries.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getProductsCountrycodes": {
+            "main": "./lib/actions/getProductsCountrycodes.js",
+            "title": "getProductsCountrycodes",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getProductsCountrycodes.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getProductsInstances": {
+            "main": "./lib/actions/getProductsInstances.js",
+            "title": "getProductsInstances",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getProductsInstances.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getProductsInstancesTypeVersion": {
+            "main": "./lib/actions/getProductsInstancesTypeVersion.js",
+            "title": "getProductsInstancesTypeVersion",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getProductsInstancesTypeVersion.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_products_mfa_kinds": {
+            "main": "./lib/actions/get_products_mfa_kinds.js",
+            "title": "get_products_mfa_kinds",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_products_mfa_kinds.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getProductsPackages": {
+            "main": "./lib/actions/getProductsPackages.js",
+            "title": "getProductsPackages",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getProductsPackages.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getProductsPrices": {
+            "main": "./lib/actions/getProductsPrices.js",
+            "title": "getProductsPrices",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getProductsPrices.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getProductsZones": {
+            "main": "./lib/actions/getProductsZones.js",
+            "title": "getProductsZones",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getProductsZones.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelf": {
+            "main": "./lib/actions/deleteSelf.js",
+            "title": "deleteSelf",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelf.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelf": {
+            "main": "./lib/actions/getSelf.js",
+            "title": "Get information about yourself",
+            "description": "Get information about yourself",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelf.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelf": {
+            "main": "./lib/actions/putSelf.js",
+            "title": "putSelf",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelf.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfAddons": {
+            "main": "./lib/actions/getSelfAddons.js",
+            "title": "Addon",
+            "description": "Get all the addons",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfAddons.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postSelfAddons": {
+            "main": "./lib/actions/postSelfAddons.js",
+            "title": "postSelfAddons",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postSelfAddons.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_self_addons_preorders": {
+            "main": "./lib/actions/post_self_addons_preorders.js",
+            "title": "post_self_addons_preorders",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_self_addons_preorders.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfAddonsAddonId": {
+            "main": "./lib/actions/deleteSelfAddonsAddonId.js",
+            "title": "deleteSelfAddonsAddonId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfAddonsAddonId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfAddonsAddonId": {
+            "main": "./lib/actions/getSelfAddonsAddonId.js",
+            "title": "Specific addon",
+            "description": "Get a specific addon",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfAddonsAddonId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfAddonsAddonId": {
+            "main": "./lib/actions/putSelfAddonsAddonId.js",
+            "title": "putSelfAddonsAddonId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfAddonsAddonId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfAddonsAddonIdApplications": {
+            "main": "./lib/actions/getSelfAddonsAddonIdApplications.js",
+            "title": "getSelfAddonsAddonIdApplications",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfAddonsAddonIdApplications.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfAddonsAddonIdEnv": {
+            "main": "./lib/actions/getSelfAddonsAddonIdEnv.js",
+            "title": "getSelfAddonsAddonIdEnv",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfAddonsAddonIdEnv.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfAddonsAddonIdPlan": {
+            "main": "./lib/actions/putSelfAddonsAddonIdPlan.js",
+            "title": "putSelfAddonsAddonIdPlan",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfAddonsAddonIdPlan.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfAddonsAddonIdSso": {
+            "main": "./lib/actions/getSelfAddonsAddonIdSso.js",
+            "title": "getSelfAddonsAddonIdSso",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfAddonsAddonIdSso.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfAddonsAddonIdTags": {
+            "main": "./lib/actions/getSelfAddonsAddonIdTags.js",
+            "title": "getSelfAddonsAddonIdTags",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfAddonsAddonIdTags.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfAddonsAddonIdTagsTag": {
+            "main": "./lib/actions/deleteSelfAddonsAddonIdTagsTag.js",
+            "title": "deleteSelfAddonsAddonIdTagsTag",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfAddonsAddonIdTagsTag.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfAddonsAddonIdTagsTag": {
+            "main": "./lib/actions/putSelfAddonsAddonIdTagsTag.js",
+            "title": "putSelfAddonsAddonIdTagsTag",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfAddonsAddonIdTagsTag.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplications": {
+            "main": "./lib/actions/getSelfApplications.js",
+            "title": "getSelfApplications",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplications.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postSelfApplications": {
+            "main": "./lib/actions/postSelfApplications.js",
+            "title": "Creates an application. If you want to create a Github app, you need to replace the oauthApp field with what you will find here: https://github.com/CleverCloud/doc.clever-cloud.com/issues/179",
+            "description": "Creates an application. If you want to create a Github app, you need to replace the oauthApp field with what you will find here: https://github.com/CleverCloud/doc.clever-cloud.com/issues/179",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postSelfApplications.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfApplicationsAppId": {
+            "main": "./lib/actions/deleteSelfApplicationsAppId.js",
+            "title": "deleteSelfApplicationsAppId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfApplicationsAppId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplicationsAppId": {
+            "main": "./lib/actions/getSelfApplicationsAppId.js",
+            "title": "getSelfApplicationsAppId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplicationsAppId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfApplicationsAppId": {
+            "main": "./lib/actions/putSelfApplicationsAppId.js",
+            "title": "putSelfApplicationsAppId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfApplicationsAppId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplicationsAppIdAddons": {
+            "main": "./lib/actions/getSelfApplicationsAppIdAddons.js",
+            "title": "getSelfApplicationsAppIdAddons",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplicationsAppIdAddons.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postSelfApplicationsAppIdAddons": {
+            "main": "./lib/actions/postSelfApplicationsAppIdAddons.js",
+            "title": "postSelfApplicationsAppIdAddons",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postSelfApplicationsAppIdAddons.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplicationsAppIdAddonsEnv": {
+            "main": "./lib/actions/getSelfApplicationsAppIdAddonsEnv.js",
+            "title": "getSelfApplicationsAppIdAddonsEnv",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplicationsAppIdAddonsEnv.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfApplicationsAppIdAddonsAddonId": {
+            "main": "./lib/actions/deleteSelfApplicationsAppIdAddonsAddonId.js",
+            "title": "deleteSelfApplicationsAppIdAddonsAddonId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfApplicationsAppIdAddonsAddonId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_self_applications__appId__branch": {
+            "main": "./lib/actions/put_self_applications__appId__branch.js",
+            "title": "put_self_applications__appId__branch",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_self_applications__appId__branch.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_self_applications__appId__branches": {
+            "main": "./lib/actions/get_self_applications__appId__branches.js",
+            "title": "get_self_applications__appId__branches",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_self_applications__appId__branches.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplicationsAppIdDependencies": {
+            "main": "./lib/actions/getSelfApplicationsAppIdDependencies.js",
+            "title": "getSelfApplicationsAppIdDependencies",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplicationsAppIdDependencies.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_self_applications__appId__dependencies_env": {
+            "main": "./lib/actions/get_self_applications__appId__dependencies_env.js",
+            "title": "get_self_applications__appId__dependencies_env",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_self_applications__appId__dependencies_env.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfApplicationsAppIdDependenciesDependencyId": {
+            "main": "./lib/actions/deleteSelfApplicationsAppIdDependenciesDependencyId.js",
+            "title": "deleteSelfApplicationsAppIdDependenciesDependencyId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfApplicationsAppIdDependenciesDependencyId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplicationsAppIdDependenciesDependencyId": {
+            "main": "./lib/actions/getSelfApplicationsAppIdDependenciesDependencyId.js",
+            "title": "getSelfApplicationsAppIdDependenciesDependencyId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplicationsAppIdDependenciesDependencyId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplicationsAppIdDependents": {
+            "main": "./lib/actions/getSelfApplicationsAppIdDependents.js",
+            "title": "getSelfApplicationsAppIdDependents",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplicationsAppIdDependents.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplicationsAppIdDeployments": {
+            "main": "./lib/actions/getSelfApplicationsAppIdDeployments.js",
+            "title": "getSelfApplicationsAppIdDeployments",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplicationsAppIdDeployments.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfApplicationsAppIdDeploymentsDeploymentIdInstances": {
+            "main": "./lib/actions/deleteSelfApplicationsAppIdDeploymentsDeploymentIdInstances.js",
+            "title": "deleteSelfApplicationsAppIdDeploymentsDeploymentIdInstances",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfApplicationsAppIdDeploymentsDeploymentIdInstances.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplicationsAppIdEnv": {
+            "main": "./lib/actions/getSelfApplicationsAppIdEnv.js",
+            "title": "getSelfApplicationsAppIdEnv",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplicationsAppIdEnv.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfApplicationsAppIdEnv": {
+            "main": "./lib/actions/putSelfApplicationsAppIdEnv.js",
+            "title": "putSelfApplicationsAppIdEnv",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfApplicationsAppIdEnv.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfApplicationsAppIdEnvEnvName": {
+            "main": "./lib/actions/deleteSelfApplicationsAppIdEnvEnvName.js",
+            "title": "deleteSelfApplicationsAppIdEnvEnvName",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfApplicationsAppIdEnvEnvName.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfApplicationsAppIdEnvEnvName": {
+            "main": "./lib/actions/putSelfApplicationsAppIdEnvEnvName.js",
+            "title": "putSelfApplicationsAppIdEnvEnvName",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfApplicationsAppIdEnvEnvName.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_self_applications__appId__exposed_env": {
+            "main": "./lib/actions/get_self_applications__appId__exposed_env.js",
+            "title": "get_self_applications__appId__exposed_env",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_self_applications__appId__exposed_env.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_self_applications__appId__exposed_env": {
+            "main": "./lib/actions/put_self_applications__appId__exposed_env.js",
+            "title": "put_self_applications__appId__exposed_env",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_self_applications__appId__exposed_env.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfApplicationsAppIdInstances": {
+            "main": "./lib/actions/deleteSelfApplicationsAppIdInstances.js",
+            "title": "deleteSelfApplicationsAppIdInstances",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfApplicationsAppIdInstances.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplicationsAppIdInstances": {
+            "main": "./lib/actions/getSelfApplicationsAppIdInstances.js",
+            "title": "getSelfApplicationsAppIdInstances",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplicationsAppIdInstances.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postSelfApplicationsAppIdInstances": {
+            "main": "./lib/actions/postSelfApplicationsAppIdInstances.js",
+            "title": "postSelfApplicationsAppIdInstances",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postSelfApplicationsAppIdInstances.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_self_applications__appId__instances__instanceId_": {
+            "main": "./lib/actions/get_self_applications__appId__instances__instanceId_.js",
+            "title": "get_self_applications__appId__instances__instanceId_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_self_applications__appId__instances__instanceId_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplicationsAppIdTags": {
+            "main": "./lib/actions/getSelfApplicationsAppIdTags.js",
+            "title": "getSelfApplicationsAppIdTags",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplicationsAppIdTags.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfApplicationsAppIdTagsTag": {
+            "main": "./lib/actions/deleteSelfApplicationsAppIdTagsTag.js",
+            "title": "deleteSelfApplicationsAppIdTagsTag",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfApplicationsAppIdTagsTag.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfApplicationsAppIdTagsTag": {
+            "main": "./lib/actions/putSelfApplicationsAppIdTagsTag.js",
+            "title": "putSelfApplicationsAppIdTagsTag",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfApplicationsAppIdTagsTag.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplicationsAppIdVhosts": {
+            "main": "./lib/actions/getSelfApplicationsAppIdVhosts.js",
+            "title": "getSelfApplicationsAppIdVhosts",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplicationsAppIdVhosts.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfApplicationsAppIdVhostsFavourite": {
+            "main": "./lib/actions/deleteSelfApplicationsAppIdVhostsFavourite.js",
+            "title": "deleteSelfApplicationsAppIdVhostsFavourite",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfApplicationsAppIdVhostsFavourite.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfApplicationsAppIdVhostsFavourite": {
+            "main": "./lib/actions/getSelfApplicationsAppIdVhostsFavourite.js",
+            "title": "getSelfApplicationsAppIdVhostsFavourite",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfApplicationsAppIdVhostsFavourite.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfApplicationsAppIdVhostsFavourite": {
+            "main": "./lib/actions/putSelfApplicationsAppIdVhostsFavourite.js",
+            "title": "putSelfApplicationsAppIdVhostsFavourite",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfApplicationsAppIdVhostsFavourite.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfApplicationsAppIdVhostsDomain": {
+            "main": "./lib/actions/deleteSelfApplicationsAppIdVhostsDomain.js",
+            "title": "deleteSelfApplicationsAppIdVhostsDomain",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfApplicationsAppIdVhostsDomain.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfApplicationsAppIdVhostsDomain": {
+            "main": "./lib/actions/putSelfApplicationsAppIdVhostsDomain.js",
+            "title": "putSelfApplicationsAppIdVhostsDomain",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfApplicationsAppIdVhostsDomain.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfAvatar": {
+            "main": "./lib/actions/putSelfAvatar.js",
+            "title": "putSelfAvatar",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfAvatar.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfChangePassword": {
+            "main": "./lib/actions/putSelfChangePassword.js",
+            "title": "putSelfChangePassword",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfChangePassword.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfConfirmationEmail": {
+            "main": "./lib/actions/getSelfConfirmationEmail.js",
+            "title": "getSelfConfirmationEmail",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfConfirmationEmail.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfConsumers": {
+            "main": "./lib/actions/getSelfConsumers.js",
+            "title": "getSelfConsumers",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfConsumers.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postSelfConsumers": {
+            "main": "./lib/actions/postSelfConsumers.js",
+            "title": "postSelfConsumers",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postSelfConsumers.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfConsumersKey": {
+            "main": "./lib/actions/deleteSelfConsumersKey.js",
+            "title": "deleteSelfConsumersKey",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfConsumersKey.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfConsumersKey": {
+            "main": "./lib/actions/getSelfConsumersKey.js",
+            "title": "getSelfConsumersKey",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfConsumersKey.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfConsumersKey": {
+            "main": "./lib/actions/putSelfConsumersKey.js",
+            "title": "putSelfConsumersKey",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfConsumersKey.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfConsumersKeySecret": {
+            "main": "./lib/actions/getSelfConsumersKeySecret.js",
+            "title": "getSelfConsumersKeySecret",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfConsumersKeySecret.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfConsumptions": {
+            "main": "./lib/actions/getSelfConsumptions.js",
+            "title": "getSelfConsumptions",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfConsumptions.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfCredits": {
+            "main": "./lib/actions/getSelfCredits.js",
+            "title": "getSelfCredits",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfCredits.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfEmails": {
+            "main": "./lib/actions/getSelfEmails.js",
+            "title": "getSelfEmails",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfEmails.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfEmailsEmail": {
+            "main": "./lib/actions/deleteSelfEmailsEmail.js",
+            "title": "deleteSelfEmailsEmail",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfEmailsEmail.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfEmailsEmail": {
+            "main": "./lib/actions/putSelfEmailsEmail.js",
+            "title": "putSelfEmailsEmail",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfEmailsEmail.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfId": {
+            "main": "./lib/actions/getSelfId.js",
+            "title": "getSelfId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfInstances": {
+            "main": "./lib/actions/getSelfInstances.js",
+            "title": "getSelfInstances",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfInstances.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfKeys": {
+            "main": "./lib/actions/getSelfKeys.js",
+            "title": "getSelfKeys",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfKeys.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfKeysKey": {
+            "main": "./lib/actions/deleteSelfKeysKey.js",
+            "title": "deleteSelfKeysKey",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfKeysKey.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfKeysKey": {
+            "main": "./lib/actions/putSelfKeysKey.js",
+            "title": "putSelfKeysKey",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfKeysKey.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "delete_self_mfa__kind_": {
+            "main": "./lib/actions/delete_self_mfa__kind_.js",
+            "title": "delete_self_mfa__kind_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_self_mfa__kind_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_self_mfa__kind_": {
+            "main": "./lib/actions/post_self_mfa__kind_.js",
+            "title": "post_self_mfa__kind_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_self_mfa__kind_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_self_mfa__kind_": {
+            "main": "./lib/actions/put_self_mfa__kind_.js",
+            "title": "put_self_mfa__kind_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_self_mfa__kind_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_self_mfa__kind__backupcodes": {
+            "main": "./lib/actions/get_self_mfa__kind__backupcodes.js",
+            "title": "get_self_mfa__kind__backupcodes",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_self_mfa__kind__backupcodes.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "post_self_mfa__kind__confirmation": {
+            "main": "./lib/actions/post_self_mfa__kind__confirmation.js",
+            "title": "post_self_mfa__kind__confirmation",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_self_mfa__kind__confirmation.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfPaymentInfo": {
+            "main": "./lib/actions/getSelfPaymentInfo.js",
+            "title": "getSelfPaymentInfo",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfPaymentInfo.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfPaymentsBillings": {
+            "main": "./lib/actions/getSelfPaymentsBillings.js",
+            "title": "getSelfPaymentsBillings",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfPaymentsBillings.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postSelfPaymentsBillings": {
+            "main": "./lib/actions/postSelfPaymentsBillings.js",
+            "title": "postSelfPaymentsBillings",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postSelfPaymentsBillings.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfPaymentsBillingsBid": {
+            "main": "./lib/actions/deleteSelfPaymentsBillingsBid.js",
+            "title": "deleteSelfPaymentsBillingsBid",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfPaymentsBillingsBid.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfPaymentsBillingsBid": {
+            "main": "./lib/actions/getSelfPaymentsBillingsBid.js",
+            "title": "getSelfPaymentsBillingsBid",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfPaymentsBillingsBid.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putSelfPaymentsBillingsBid": {
+            "main": "./lib/actions/putSelfPaymentsBillingsBid.js",
+            "title": "putSelfPaymentsBillingsBid",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putSelfPaymentsBillingsBid.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfPaymentsBillingsBidPdf": {
+            "main": "./lib/actions/getSelfPaymentsBillingsBidPdf.js",
+            "title": "getSelfPaymentsBillingsBidPdf",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfPaymentsBillingsBidPdf.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfPaymentsFullpricePrice": {
+            "main": "./lib/actions/getSelfPaymentsFullpricePrice.js",
+            "title": "getSelfPaymentsFullpricePrice",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfPaymentsFullpricePrice.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfPaymentsMethods": {
+            "main": "./lib/actions/getSelfPaymentsMethods.js",
+            "title": "getSelfPaymentsMethods",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfPaymentsMethods.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postSelfPaymentsMethods": {
+            "main": "./lib/actions/postSelfPaymentsMethods.js",
+            "title": "postSelfPaymentsMethods",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postSelfPaymentsMethods.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_self_payments_methods_default": {
+            "main": "./lib/actions/get_self_payments_methods_default.js",
+            "title": "get_self_payments_methods_default",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_self_payments_methods_default.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_self_payments_methods_default": {
+            "main": "./lib/actions/put_self_payments_methods_default.js",
+            "title": "put_self_payments_methods_default",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_self_payments_methods_default.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfPaymentsMethodsMId": {
+            "main": "./lib/actions/deleteSelfPaymentsMethodsMId.js",
+            "title": "deleteSelfPaymentsMethodsMId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfPaymentsMethodsMId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_self_payments_monthlyinvoice": {
+            "main": "./lib/actions/get_self_payments_monthlyinvoice.js",
+            "title": "get_self_payments_monthlyinvoice",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_self_payments_monthlyinvoice.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "put_self_payments_monthlyinvoice_maxcredit": {
+            "main": "./lib/actions/put_self_payments_monthlyinvoice_maxcredit.js",
+            "title": "put_self_payments_monthlyinvoice_maxcredit",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_self_payments_monthlyinvoice_maxcredit.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfPaymentsRecurring": {
+            "main": "./lib/actions/deleteSelfPaymentsRecurring.js",
+            "title": "deleteSelfPaymentsRecurring",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfPaymentsRecurring.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_self_payments_recurring": {
+            "main": "./lib/actions/get_self_payments_recurring.js",
+            "title": "get_self_payments_recurring",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_self_payments_recurring.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_self_payments_tokens_bt": {
+            "main": "./lib/actions/get_self_payments_tokens_bt.js",
+            "title": "get_self_payments_tokens_bt",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_self_payments_tokens_bt.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfTokens": {
+            "main": "./lib/actions/deleteSelfTokens.js",
+            "title": "deleteSelfTokens",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfTokens.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfTokens": {
+            "main": "./lib/actions/getSelfTokens.js",
+            "title": "getSelfTokens",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfTokens.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "deleteSelfTokensToken": {
+            "main": "./lib/actions/deleteSelfTokensToken.js",
+            "title": "deleteSelfTokensToken",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/deleteSelfTokensToken.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSelfValidateEmail": {
+            "main": "./lib/actions/getSelfValidateEmail.js",
+            "title": "getSelfValidateEmail",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSelfValidateEmail.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSummary": {
+            "main": "./lib/actions/getSummary.js",
+            "title": "getSummary",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSummary.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postUsers": {
+            "main": "./lib/actions/postUsers.js",
+            "title": "postUsers",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postUsers.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getUsersId": {
+            "main": "./lib/actions/getUsersId.js",
+            "title": "getUsersId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getUsersId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getUsersIdApplications": {
+            "main": "./lib/actions/getUsersIdApplications.js",
+            "title": "getUsersIdApplications",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getUsersIdApplications.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getUsersUserIdGitInfo": {
+            "main": "./lib/actions/getUsersUserIdGitInfo.js",
+            "title": "getUsersUserIdGitInfo",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getUsersUserIdGitInfo.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getVendorApps": {
+            "main": "./lib/actions/getVendorApps.js",
+            "title": "getVendorApps",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getVendorApps.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getVendorAppsAddonId": {
+            "main": "./lib/actions/getVendorAppsAddonId.js",
+            "title": "getVendorAppsAddonId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getVendorAppsAddonId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "putVendorAppsAddonId": {
+            "main": "./lib/actions/putVendorAppsAddonId.js",
+            "title": "putVendorAppsAddonId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/putVendorAppsAddonId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "postVendorBillingOwnerId": {
+            "main": "./lib/actions/postVendorBillingOwnerId.js",
+            "title": "postVendorBillingOwnerId",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/postVendorBillingOwnerId.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

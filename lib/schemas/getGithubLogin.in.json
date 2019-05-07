@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "redirectUrl": {
+            "required": false,
+            "type": "string"
+        },
+        "fromAuthorize": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "addonId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "payment": {
+                    "properties": {
+                        "deviceData": {
+                            "type": "string"
+                        },
+                        "token": {
+                            "type": "string"
+                        },
+                        "type": {
+                            "enum": [
+                                "NEW_CARD",
+                                "EXISTING_CARD"
+                            ],
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "token",
+                        "type"
+                    ],
+                    "type": "object"
+                },
+                "plan": {
+                    "type": "string"
+                },
+                "providerId": {
+                    "description": "",
+                    "type": "string"
+                },
+                "region": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "payment",
+                "plan",
+                "providerId",
+                "region"
+            ],
+            "type": "object"
+        }
+    }
+}

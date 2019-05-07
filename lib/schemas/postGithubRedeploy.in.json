@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "User_Agent": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Github_Event": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Hub_Signature": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

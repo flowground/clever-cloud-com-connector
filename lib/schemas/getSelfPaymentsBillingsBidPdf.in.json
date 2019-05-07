@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "bid": {
+            "required": true,
+            "type": "string"
+        },
+        "token": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

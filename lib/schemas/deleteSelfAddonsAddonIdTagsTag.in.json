@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "tag": {
+            "required": true,
+            "type": "string"
+        },
+        "addonId": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

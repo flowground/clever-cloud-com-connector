@@ -1,0 +1,24 @@
+{
+    "type": "object",
+    "properties": {
+        "appId": {
+            "required": true,
+            "type": "string"
+        },
+        "domain": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "fqdn": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "fqdn"
+            ],
+            "type": "object"
+        }
+    }
+}

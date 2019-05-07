@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "addonId": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

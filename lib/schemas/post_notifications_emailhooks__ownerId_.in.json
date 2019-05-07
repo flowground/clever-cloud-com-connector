@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "ownerId": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "type": "object",
+    "properties": {
+        "tag": {
+            "required": true,
+            "type": "string"
+        },
+        "addonId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "body": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "body"
+            ],
+            "type": "object"
+        }
+    }
+}

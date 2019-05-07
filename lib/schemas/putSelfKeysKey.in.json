@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "properties": {
+        "key": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "body": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "body"
+            ],
+            "type": "object"
+        }
+    }
+}

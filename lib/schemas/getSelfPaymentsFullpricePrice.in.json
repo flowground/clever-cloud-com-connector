@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "price": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

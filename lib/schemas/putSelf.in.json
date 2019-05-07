@@ -1,0 +1,48 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "description": "",
+            "properties": {
+                "address": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "country": {
+                    "type": "string"
+                },
+                "email": {
+                    "description": "",
+                    "type": "string"
+                },
+                "lang": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "terms": {
+                    "default": false,
+                    "type": "boolean"
+                },
+                "zipcode": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "email",
+                "password",
+                "terms"
+            ],
+            "type": "object"
+        }
+    }
+}

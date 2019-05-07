@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "dependencyId": {
+            "required": true,
+            "type": "string"
+        },
+        "appId": {
+            "required": true,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

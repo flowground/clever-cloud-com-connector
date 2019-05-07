@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "version": {
+            "required": true,
+            "type": "string"
+        },
+        "for": {
+            "required": false,
+            "type": "string"
+        },
+        "app": {
+            "required": false,
+            "type": "string"
+        },
+        "type_______": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

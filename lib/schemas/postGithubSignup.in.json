@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "properties": {
+        "transactionId": {
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": false,
+            "type": "string"
+        },
+        "otherId": {
+            "required": false,
+            "type": "string"
+        },
+        "otherEmail": {
+            "required": false,
+            "type": "string"
+        },
+        "password": {
+            "required": false,
+            "type": "string"
+        },
+        "autoLink": {
+            "required": false,
+            "type": "string"
+        },
+        "terms": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

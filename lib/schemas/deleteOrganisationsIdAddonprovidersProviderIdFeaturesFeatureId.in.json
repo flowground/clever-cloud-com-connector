@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "featureId": {
+            "required": true,
+            "type": "string"
+        },
+        "providerId": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "appId": {
+            "required": false,
+            "type": "string"
+        },
+        "from": {
+            "required": false,
+            "type": "string"
+        },
+        "to": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

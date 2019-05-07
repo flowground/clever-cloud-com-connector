@@ -1,0 +1,70 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "baseUrl": {
+                    "description": "Must be a valid HTTP URL",
+                    "properties": {
+                        "url": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "url"
+                    ],
+                    "type": "object"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "picture": {
+                    "description": "",
+                    "type": "string"
+                },
+                "rights": {
+                    "properties": {
+                        "activated": {
+                            "default": false,
+                            "type": "boolean"
+                        },
+                        "right": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "activated",
+                        "right"
+                    ],
+                    "type": "object"
+                },
+                "url": {
+                    "description": "Must be a valid HTTP URL",
+                    "properties": {
+                        "url": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "url"
+                    ],
+                    "type": "object"
+                }
+            },
+            "required": [
+                "baseUrl",
+                "name",
+                "rights",
+                "url"
+            ],
+            "type": "object"
+        }
+    }
+}

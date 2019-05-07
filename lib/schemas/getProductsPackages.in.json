@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "coupon": {
+            "required": false,
+            "type": "string"
+        },
+        "orgaId": {
+            "required": false,
+            "type": "string"
+        },
+        "currency": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

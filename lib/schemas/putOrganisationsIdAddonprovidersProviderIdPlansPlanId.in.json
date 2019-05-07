@@ -1,0 +1,60 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "providerId": {
+            "required": true,
+            "type": "string"
+        },
+        "planId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "features": {
+                    "items": {
+                        "properties": {
+                            "name": {
+                                "type": "string"
+                            },
+                            "type": {
+                                "type": "string"
+                            },
+                            "value": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "type",
+                            "value"
+                        ],
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "price": {
+                    "format": "int64",
+                    "type": "integer"
+                },
+                "slug": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "features",
+                "name",
+                "price",
+                "slug"
+            ],
+            "type": "object"
+        }
+    }
+}

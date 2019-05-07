@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "addonId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "cost": {
+                    "format": "double",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "cost"
+            ],
+            "type": "object"
+        }
+    }
+}

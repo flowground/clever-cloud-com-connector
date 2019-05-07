@@ -1,0 +1,49 @@
+{
+    "type": "object",
+    "properties": {
+        "oauth_consumer_key": {
+            "required": false,
+            "type": "string"
+        },
+        "oauth_token": {
+            "required": false,
+            "type": "string"
+        },
+        "oauth_signature_method": {
+            "required": false,
+            "type": "string"
+        },
+        "oauth_signature": {
+            "required": false,
+            "type": "string"
+        },
+        "oauth_timestamp": {
+            "required": false,
+            "type": "string"
+        },
+        "oauth_nonce": {
+            "required": false,
+            "type": "string"
+        },
+        "oauth_version": {
+            "required": false,
+            "type": "string"
+        },
+        "oauth_verifier": {
+            "required": false,
+            "type": "string"
+        },
+        "oauth_callback": {
+            "required": false,
+            "type": "string"
+        },
+        "oauth_token_secret": {
+            "required": false,
+            "type": "string"
+        },
+        "oauth_callback_confirmed": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

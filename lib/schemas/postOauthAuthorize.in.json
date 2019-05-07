@@ -1,0 +1,77 @@
+{
+    "type": "object",
+    "properties": {
+        "almighty": {
+            "required": false,
+            "type": "string"
+        },
+        "access_organisations": {
+            "required": false,
+            "type": "string"
+        },
+        "manage_organisations": {
+            "required": false,
+            "type": "string"
+        },
+        "manage_organisations_services": {
+            "required": false,
+            "type": "string"
+        },
+        "manage_organisations_applications": {
+            "required": false,
+            "type": "string"
+        },
+        "manage_organisations_members": {
+            "required": false,
+            "type": "string"
+        },
+        "access_organisations_bills": {
+            "required": false,
+            "type": "string"
+        },
+        "access_organisations_credit_count": {
+            "required": false,
+            "type": "string"
+        },
+        "access_organisations_consumption_statistics": {
+            "required": false,
+            "type": "string"
+        },
+        "access_personal_information": {
+            "required": false,
+            "type": "string"
+        },
+        "manage_personal_information": {
+            "required": false,
+            "type": "string"
+        },
+        "manage_ssh_keys": {
+            "required": false,
+            "type": "string"
+        },
+        "manage_services": {
+            "required": false,
+            "type": "string"
+        },
+        "manage_applications": {
+            "required": false,
+            "type": "string"
+        },
+        "access_bills": {
+            "required": false,
+            "type": "string"
+        },
+        "access_credit_count": {
+            "required": false,
+            "type": "string"
+        },
+        "access_consumption_statistics": {
+            "required": false,
+            "type": "string"
+        },
+        "Cookie": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

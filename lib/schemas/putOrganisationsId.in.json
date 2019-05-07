@@ -1,0 +1,49 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "VAT": {
+                    "type": "string"
+                },
+                "address": {
+                    "description": "The address of the organisation.",
+                    "type": "string"
+                },
+                "city": {
+                    "description": "The city of the organisation.",
+                    "type": "string"
+                },
+                "company": {
+                    "description": "The company's name of the organisation.",
+                    "type": "string"
+                },
+                "country": {
+                    "description": "The country of the organisation.",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "The description of the organisation.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "The name of the organisation.",
+                    "type": "string"
+                },
+                "zipcode": {
+                    "description": "The zipcode of the city's organisation.",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description",
+                "name"
+            ],
+            "type": "object"
+        }
+    }
+}

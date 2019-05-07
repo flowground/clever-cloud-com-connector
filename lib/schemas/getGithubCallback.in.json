@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "code": {
+            "required": false,
+            "type": "string"
+        },
+        "state": {
+            "required": false,
+            "type": "string"
+        },
+        "error": {
+            "required": false,
+            "type": "string"
+        },
+        "error_description": {
+            "required": false,
+            "type": "string"
+        },
+        "error_uri": {
+            "required": false,
+            "type": "string"
+        },
+        "Cookie": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}
